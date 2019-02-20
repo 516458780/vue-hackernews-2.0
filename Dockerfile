@@ -7,7 +7,7 @@ RUN npm install pm2 -g
 RUN mkdir -p /vue-hackernews
 WORKDIR /vue-hackernews
 COPY ./package.json /vue-hackernews/
-COPY ./package-lock.json /vue-hackernews/
+#COPY ./package-lock.json /vue-hackernews/
 RUN npm install
 COPY . /vue-hackernews
 ENV NODE_ENV=production
